@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muskan-Protecting Smiles</title>
+    
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Della+Respira&family=Denk+One&family=Manrope:wght@200;300;400;500;600;700;800&family=Mukta:wght@500&display=swap" rel="stylesheet"> 
@@ -13,21 +15,24 @@
 </head>
 <body>
     
-    <nav class="navbar">
-        
-        
-            <ul class="one">
-                <a href="#"><li class="nav-item">Home</li></a>
-                <a href="#"><li class="nav-item">Contact</li></a>
-                <a href="#"><li class="nav-item">About Us</li></a>
-            </ul>
-        
-
-        <div class =two>
-
-            <a href="#"><button class="signin"><h3 class="signin-text">Sign In</h3></button></a>
-            
+    <nav>
+        <div class="sih">
+            <img src="images/vector.png" alt="Logo Image">
         </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+            
+            
+            
+            <li class=muskan><img src="images/muskan.png"></li>
+        </ul>
     </nav>
 
     <section class="main">
@@ -45,14 +50,13 @@
 
             <div class="ultimate">
         <div class="carousel flex2">
-            <p class="para" id="first">India's Pledge to End Child Labour by 2025 Needs a Resolute Time-Bound Action Plan Now</p>
-            <p class="para" id="second">Child labour perpetuates poverty, illiteracy, unemployment, population growth and other social problems.</p>
-            <p class="para" id="third">Bihar, Uttar Pradesh, Rajasthan, Madhya Pradesh and Maharashtra are the main states in India where child labour is present.</p>
-        
+            <form>
+                <input class="inp" id="admin-id" type="number" placeholder="Admin ID">
+                <input class="inp"type="password" placeholder="Password">
+                <br>
 
-       
-        <i class="previous fa-solid fa-circle-arrow-left" onclick="plusSlides(-1)"></i>
-        <i class="next fa-solid fa-circle-arrow-right" onclick="plusSlides(1)"></i>
+                <input class="sub" type="submit" value="Log In">
+            </form>
         </div>
         </div>
         </div>
@@ -63,6 +67,8 @@
         <a href="#"><i class="fa-brands fa-instagram"></i> </a>
         </div>
     </section>
-<script src="index.js"></script>
+
+    
+    <script src="index.js"></script>
 </body>
 </html>

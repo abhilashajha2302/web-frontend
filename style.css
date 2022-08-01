@@ -4,22 +4,25 @@
 }
 
 
-.fa-bars{
-    display: none;
-}
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    background-color: #ffffff;
-}
 
-.nav-link{
-    font-family: 'Manrope';
-    
-}
 
 table{
     text-align: center;
+}
+
+table thead{
+    background-color: #000000;
+}
+tr{
+    background-color: white;
+}
+
+th{
+    color: black;
+}
+
+td{
+    color: #000000;
 }
 
 .one{
@@ -30,16 +33,7 @@ table{
     width:40rem;
 }
 
-.nav-item{
-    margin: 1.5rem;
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    color: #000000;
 
-}
 
 .signin{
     background: #F85F6A;
@@ -107,6 +101,7 @@ table{
     position: absolute;
     top: 27.1rem;
     left: 38.8rem;
+    color: #000000;
 }
 
 .first{
@@ -154,17 +149,7 @@ table{
     padding: 2rem;}
 
 
-    .carousel {
-        width: 25rem;
-        position: absolute;
-        right: 4rem;
-        top: 18rem;
-        border-bottom: 6px solid #8f8f8f;
-        border-top: 6px solid #8f8f8f;
-        border-left: 0px;
-        border-right: 0px;
-        border-radius: 65px;
-}
+    
 a{
     text-decoration: none;
 }
@@ -248,11 +233,67 @@ table thead{
 .brand{
     width: 5rem;
 }
+
+.carousel{
+    width: 25rem;
+    height: 20rem;
+    background-color: #F85F6A;
+    position: absolute;
+    top:30%;
+    left: 70%;
+    border-radius: 2rem;
+    opacity: 0.8;
+    text-align: center;
+}
+form{
+    
+    margin: auto;
+}
+
+.inp{
+    width:90%;
+    height:4rem;
+    margin: 1rem;
+    background-color: white;
+    opacity: 1;
+    border-style: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    color: #000000;
+    
+}
+
+.sub{
+    margin-top: 2rem;
+    width: 80%;
+    height: 4.2rem;
+    border-style: none;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    background-color: #258bc2;
+    font-size: 1.5rem;
+    cursor:pointer;
+}
+
+.inp::placeholder{
+    font-weight: bold;
+    position: relative;
+    left: 5%;
+}
+
+
   
+#admin-id{
+    margin-top: 2rem;
+
+    
+}
   /** 600px or less**/
 
   
   @media only screen and (max-width: 800px) {
+
+    
     
     .nav-link{
         margin: 0;
@@ -367,8 +408,11 @@ table thead{
          }
 
          .carousel{
-            width:300px;
-            margin: auto;
+            width: 70%;
+            
+            position: absolute;
+            left: 18%;
+            top: 48%;
             text-align: center;
          }
 

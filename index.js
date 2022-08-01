@@ -1,36 +1,17 @@
-var slideIndex=1
-showSlides(slideIndex)
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+const flex = document.querySelector(".flexbox");
 
-function plusSlides(n){
-    showSlides(slideIndex += n)
-}
+hamburger.addEventListener('click', ()=>{
+   //Animate Links
+   flex.classList.toggle("box")
 
-function currentSlide(n){
-    showSlides(slideIndex = n)
-}
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
 
-function showSlides(n){
-    var i
-    var slides=document.getElementsByClassName('para')
-    if(n>slides.length)
-    {slideIndex=1}
-    if(n<1)
-    {slideIndex=slides.length}
-
-    for(i=0;i<slides.length;i++)
-    {
-      
-        slides[i].style.display = 'none';
-        
-    }
-
-    slides[slideIndex-1].style.display = 'block';
-
-}
-
-
-
-    document.getElementById("fa-bars").onClick= function(){
-        document.getElementById("navbar").style.display = "block";
-    }
-
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
