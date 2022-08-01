@@ -1,134 +1,74 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muskan-Protecting Smiles</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Della+Respira&family=Denk+One&family=Manrope:wght@200;300;400;500;600;700;800&family=Mukta:wght@500&display=swap" rel="stylesheet"> 
-
-    <script src="https://kit.fontawesome.com/bfcd2520d4.js" crossorigin="anonymous"></script>
-    
-    <!-- Bootstrap core CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="nav.css">
-    
-    
+<script src="https://kit.fontawesome.com/bfcd2520d4.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <nav>
-    <div class="sih">
-        <img src="images/vector.png" alt="Logo Image">
-    </div>
-    <div class="hamburger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-    </div>
-    <ul class="nav-links">
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Accepted Complaints</a></li>
-        <li><a href="#">Maps</a></li>
-        <li><a href="#">Data Analytics</a></li>
+    
+    <nav>
+        <div class="sih">
+            <img src="images/vector.png" alt="Logo Image">
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+            
+            
+            
+            <li class=muskan><img src="images/muskan.png"></li>
+        </ul>
+    </nav>
+
+    <section class="main">
+        <img src="images/logo.png" class="logo">
         
-        
-        <li class=muskan><img src="images/muskan.png"></li>
-    </ul>
-</nav>
+        <div class="flexbox">
+            <div class="flex1">
+        <h1 class="tm">MUSKAN</h1>
+        <h3 class="head">PROTECTING SMILES</h3>
+        <i class="fa-solid fa-diamond"></i>
+        <p class="first">It's time to stop child labour</p>
+        <p class="second">and start child care</p>
+        <hr class="rule">
+            </div>
 
-    <table class="table table-borderless responsiveTable" id="example1">
-        <thead>
-            <tr style="background-color:black;">
-                <th class="image">Image</th>
-                <th>Description</th>
-                <th colspan="2">Resolution</th>
-
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td data-label="Image"><img src="images/child labour 1.png" class="child-image"></td>
-                <td data-label="Description">Location:<a href="#"><i class="fa-solid fa-map-location-dot map"></i></a>
+            <div class="ultimate">
+        <div class="carousel flex2">
+            <form>
+                <input class="inp" id="admin-id" type="number" placeholder="Admin ID">
+                <input class="inp"type="password" placeholder="Password">
                 <br>
-                Age:
-                <br>
-                type of work:
-                </td>
-                <td data-label=" Resolution" class="resol"><img src="images/accept.png"></td>
-                <td><img src="images/reject.png"></td>
 
+                <input class="sub" type="submit" value="Log In">
+            </form>
+        </div>
+        </div>
+        </div>
+        <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook"></i> </a>
+        <a href="#"><i class="fa-brands fa-youtube"></i> </a>
+        <a href="#"><i class="fa-brands fa-twitter"></i> </a>
+        <a href="#"><i class="fa-brands fa-instagram"></i> </a>
+        </div>
+    </section>
 
-            </tr>
-            
-            <tr>
-                <td data-label="Image"><img src="images/child labour 2.png" class="child-image"></td>
-                <td data-label="Description">Location:<a href="#"><i class="fa-solid fa-map-location-dot map"></i></a>
-                <br>
-                Age:
-                <br>
-                type of work:
-                </td>
-                <td data-label=" Resolution"><img src="images/accept.png"></td>
-                <td><img src="images/reject.png"></td>
-
-
-            </tr>
-
-
-            <tr>
-                <td data-label="Image"><img src="images/child labour 3.png" class="child-image"></td>
-                <td data-label="Description">Location:<a href="#"><i class="fa-solid fa-map-location-dot map"></i></a>
-                <br>
-                Age:
-                <br>
-                type of work:
-                </td>
-                <td data-label=" Resolution"><img src="images/accept.png"></td>
-                <td><img src="images/reject.png"></td>
-
-
-            </tr>
-
-            
-            
-        </tbody>
-    </table>
-
-
+    
+    <script src="index.js"></script>
 </body>
-<!-- Bootstrap core JavaScript-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-<script src="site.all.js"></script> 
-<script type="text/javascript">
-  (()=>{
-    // to match styling of the table when full screen
-    let headerStyle = 'font-weight: 700; background-color: #ededed; color: #212529';
-
-    // basic table
-    let headers1 = ['First Name', 'Last Name', 'Email', 'Phone', 'Location', 'Department', 'Status'];
-    toResponsive('example1', headers1, headerStyle );
-
-    // apply responsive table to example2 with summation on columns 3 and 4
-    let headers2 = ['Date', 'Transaction Type', 'Amount', 'Fees'];
-    toResponsive('example2', headers2, headerStyle, {show: [3,4], hide: [1,2]} );
-
-    // apply responsive table to example3 with passing styling
-    let headers3 = ['Date', 'Transaction Type', 'Amount', {label:'Fees', css: 'color: red'} ];
-    toResponsive('example3', headers3, headerStyle, {show: [3,4], hide: [1,2]} );
-  })();
-</script>
-
-
-<script src="index.js"></script>
 </html>
